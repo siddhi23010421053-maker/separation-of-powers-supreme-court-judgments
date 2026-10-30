@@ -2,42 +2,42 @@
 <title id="chart-title">Case summaries by year</title>
 <desc id="chart-description">2021 (from 1 Sep): 1; 2022: 2; 2023: 9; 2024: 2; 2025: 4; 2026 (to 31 Aug): 1</desc>
 <rect width="960" height="516" rx="8" fill="#fffefa"/>
-<text x="44" y="46" fill="#78847f" font-family="Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">DATASET SNAPSHOT</text>
-<text x="44" y="82" fill="#172b2a" font-family="Arial, sans-serif" font-size="27" font-weight="700">Case summaries by year</text>
-<text x="44" y="108" fill="#78847f" font-family="Arial, sans-serif" font-size="14">Number of cases</text>
+<text x="44" y="46" fill="#78847f" font-family="Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="1.5">DATASET SNAPSHOT</text>
+<text x="44" y="82" fill="#172b2a" font-family="Arial, sans-serif" font-size="36" font-weight="700">Case summaries by year</text>
+<text x="44" y="108" fill="#78847f" font-family="Arial, sans-serif" font-size="20">Number of cases</text>
 <line x1="350.0" y1="137" x2="350.0" y2="430" stroke="#e6e5dc" stroke-width="1"/>
-<text x="350.0" y="458" text-anchor="middle" fill="#78847f" font-family="Arial, sans-serif" font-size="12">0</text>
+<text x="350.0" y="458" text-anchor="middle" fill="#78847f" font-family="Arial, sans-serif" font-size="18">0</text>
 <line x1="456.0" y1="137" x2="456.0" y2="430" stroke="#e6e5dc" stroke-width="1"/>
-<text x="456.0" y="458" text-anchor="middle" fill="#78847f" font-family="Arial, sans-serif" font-size="12">2</text>
+<text x="456.0" y="458" text-anchor="middle" fill="#78847f" font-family="Arial, sans-serif" font-size="18">2</text>
 <line x1="615.0" y1="137" x2="615.0" y2="430" stroke="#e6e5dc" stroke-width="1"/>
-<text x="615.0" y="458" text-anchor="middle" fill="#78847f" font-family="Arial, sans-serif" font-size="12">5</text>
+<text x="615.0" y="458" text-anchor="middle" fill="#78847f" font-family="Arial, sans-serif" font-size="18">5</text>
 <line x1="774.0" y1="137" x2="774.0" y2="430" stroke="#e6e5dc" stroke-width="1"/>
-<text x="774.0" y="458" text-anchor="middle" fill="#78847f" font-family="Arial, sans-serif" font-size="12">8</text>
+<text x="774.0" y="458" text-anchor="middle" fill="#78847f" font-family="Arial, sans-serif" font-size="18">8</text>
 <line x1="880.0" y1="137" x2="880.0" y2="430" stroke="#e6e5dc" stroke-width="1"/>
-<text x="880.0" y="458" text-anchor="middle" fill="#78847f" font-family="Arial, sans-serif" font-size="12">10</text>
-<text x="44" y="179.0" fill="#172b2a" font-family="Arial, sans-serif" font-size="15">2021 (from 1 Sep)</text>
+<text x="880.0" y="458" text-anchor="middle" fill="#78847f" font-family="Arial, sans-serif" font-size="18">10</text>
+<text x="44" y="179.0" fill="#172b2a" font-family="Arial, sans-serif" font-size="26">2021 (from 1 Sep)</text>
 <rect x="350" y="164.0" width="530" height="20" rx="10" fill="#f0efe8"/>
 <rect x="350" y="164.0" width="53.0" height="20" rx="10" fill="#173d37"/>
-<text x="415.0" y="179.0" fill="#172b2a" font-family="Arial, sans-serif" font-size="14" font-weight="700">1</text>
-<text x="44" y="227.0" fill="#172b2a" font-family="Arial, sans-serif" font-size="15">2022</text>
+<text x="415.0" y="179.0" fill="#172b2a" font-family="Arial, sans-serif" font-size="20" font-weight="700">1</text>
+<text x="44" y="227.0" fill="#172b2a" font-family="Arial, sans-serif" font-size="26">2022</text>
 <rect x="350" y="212.0" width="530" height="20" rx="10" fill="#f0efe8"/>
 <rect x="350" y="212.0" width="106.0" height="20" rx="10" fill="#173d37"/>
-<text x="468.0" y="227.0" fill="#172b2a" font-family="Arial, sans-serif" font-size="14" font-weight="700">2</text>
-<text x="44" y="275.0" fill="#172b2a" font-family="Arial, sans-serif" font-size="15">2023</text>
+<text x="468.0" y="227.0" fill="#172b2a" font-family="Arial, sans-serif" font-size="20" font-weight="700">2</text>
+<text x="44" y="275.0" fill="#172b2a" font-family="Arial, sans-serif" font-size="26">2023</text>
 <rect x="350" y="260.0" width="530" height="20" rx="10" fill="#f0efe8"/>
 <rect x="350" y="260.0" width="477.0" height="20" rx="10" fill="#173d37"/>
-<text x="839.0" y="275.0" fill="#172b2a" font-family="Arial, sans-serif" font-size="14" font-weight="700">9</text>
-<text x="44" y="323.0" fill="#172b2a" font-family="Arial, sans-serif" font-size="15">2024</text>
+<text x="839.0" y="275.0" fill="#172b2a" font-family="Arial, sans-serif" font-size="20" font-weight="700">9</text>
+<text x="44" y="323.0" fill="#172b2a" font-family="Arial, sans-serif" font-size="26">2024</text>
 <rect x="350" y="308.0" width="530" height="20" rx="10" fill="#f0efe8"/>
 <rect x="350" y="308.0" width="106.0" height="20" rx="10" fill="#173d37"/>
-<text x="468.0" y="323.0" fill="#172b2a" font-family="Arial, sans-serif" font-size="14" font-weight="700">2</text>
-<text x="44" y="371.0" fill="#172b2a" font-family="Arial, sans-serif" font-size="15">2025</text>
+<text x="468.0" y="323.0" fill="#172b2a" font-family="Arial, sans-serif" font-size="20" font-weight="700">2</text>
+<text x="44" y="371.0" fill="#172b2a" font-family="Arial, sans-serif" font-size="26">2025</text>
 <rect x="350" y="356.0" width="530" height="20" rx="10" fill="#f0efe8"/>
 <rect x="350" y="356.0" width="212.0" height="20" rx="10" fill="#173d37"/>
-<text x="574.0" y="371.0" fill="#172b2a" font-family="Arial, sans-serif" font-size="14" font-weight="700">4</text>
-<text x="44" y="419.0" fill="#172b2a" font-family="Arial, sans-serif" font-size="15">2026 (to 31 Aug)</text>
+<text x="574.0" y="371.0" fill="#172b2a" font-family="Arial, sans-serif" font-size="20" font-weight="700">4</text>
+<text x="44" y="419.0" fill="#172b2a" font-family="Arial, sans-serif" font-size="26">2026 (to 31 Aug)</text>
 <rect x="350" y="404.0" width="530" height="20" rx="10" fill="#f0efe8"/>
 <rect x="350" y="404.0" width="53.0" height="20" rx="10" fill="#173d37"/>
-<text x="415.0" y="419.0" fill="#172b2a" font-family="Arial, sans-serif" font-size="14" font-weight="700">1</text>
-<text x="44" y="496" fill="#78847f" font-family="Arial, sans-serif" font-size="12">Year labels follow the project case list.</text>
+<text x="415.0" y="419.0" fill="#172b2a" font-family="Arial, sans-serif" font-size="20" font-weight="700">1</text>
+<text x="44" y="496" fill="#78847f" font-family="Arial, sans-serif" font-size="18">Year labels follow the project case list.</text>
 </svg>

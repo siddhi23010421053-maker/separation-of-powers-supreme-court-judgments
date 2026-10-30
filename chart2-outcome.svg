@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 468" role="img" aria-labelledby="chart-title chart-description">
+<title id="chart-title">Recorded case outcomes</title>
+<desc id="chart-description">Partly allowed: 3; Dismissed: 6; CHECK: 2; Other: 3; Allowed: 5</desc>
+<rect width="960" height="468" rx="8" fill="#fffefa"/>
+<text x="44" y="46" fill="#78847f" font-family="Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">DATASET SNAPSHOT</text>
+<text x="44" y="82" fill="#172b2a" font-family="Arial, sans-serif" font-size="27" font-weight="700">Recorded case outcomes</text>
+<text x="44" y="108" fill="#78847f" font-family="Arial, sans-serif" font-size="14">Number of cases</text>
+<rect x="790" y="30" width="12" height="12" rx="3" fill="#c69b58"/>
+<text x="809" y="41" fill="#78847f" font-family="Arial, sans-serif" font-size="12">CHECK field</text>
+<line x1="350.0" y1="137" x2="350.0" y2="382" stroke="#e6e5dc" stroke-width="1"/>
+<text x="350.0" y="410" text-anchor="middle" fill="#78847f" font-family="Arial, sans-serif" font-size="12">0</text>
+<line x1="456.0" y1="137" x2="456.0" y2="382" stroke="#e6e5dc" stroke-width="1"/>
+<text x="456.0" y="410" text-anchor="middle" fill="#78847f" font-family="Arial, sans-serif" font-size="12">2</text>
+<line x1="615.0" y1="137" x2="615.0" y2="382" stroke="#e6e5dc" stroke-width="1"/>
+<text x="615.0" y="410" text-anchor="middle" fill="#78847f" font-family="Arial, sans-serif" font-size="12">5</text>
+<line x1="774.0" y1="137" x2="774.0" y2="382" stroke="#e6e5dc" stroke-width="1"/>
+<text x="774.0" y="410" text-anchor="middle" fill="#78847f" font-family="Arial, sans-serif" font-size="12">8</text>
+<line x1="880.0" y1="137" x2="880.0" y2="382" stroke="#e6e5dc" stroke-width="1"/>
+<text x="880.0" y="410" text-anchor="middle" fill="#78847f" font-family="Arial, sans-serif" font-size="12">10</text>
+<text x="44" y="179.0" fill="#172b2a" font-family="Arial, sans-serif" font-size="15">Partly allowed</text>
+<rect x="350" y="164.0" width="530" height="20" rx="10" fill="#f0efe8"/>
+<rect x="350" y="164.0" width="159.0" height="20" rx="10" fill="#173d37"/>
+<text x="521.0" y="179.0" fill="#172b2a" font-family="Arial, sans-serif" font-size="14" font-weight="700">3</text>
+<text x="44" y="227.0" fill="#172b2a" font-family="Arial, sans-serif" font-size="15">Dismissed</text>
+<rect x="350" y="212.0" width="530" height="20" rx="10" fill="#f0efe8"/>
+<rect x="350" y="212.0" width="318.0" height="20" rx="10" fill="#173d37"/>
+<text x="680.0" y="227.0" fill="#172b2a" font-family="Arial, sans-serif" font-size="14" font-weight="700">6</text>
+<text x="44" y="275.0" fill="#172b2a" font-family="Arial, sans-serif" font-size="15">CHECK</text>
+<rect x="350" y="260.0" width="530" height="20" rx="10" fill="#f0efe8"/>
+<rect x="350" y="260.0" width="106.0" height="20" rx="10" fill="#c69b58"/>
+<text x="468.0" y="275.0" fill="#172b2a" font-family="Arial, sans-serif" font-size="14" font-weight="700">2</text>
+<text x="44" y="323.0" fill="#172b2a" font-family="Arial, sans-serif" font-size="15">Other</text>
+<rect x="350" y="308.0" width="530" height="20" rx="10" fill="#f0efe8"/>
+<rect x="350" y="308.0" width="159.0" height="20" rx="10" fill="#173d37"/>
+<text x="521.0" y="323.0" fill="#172b2a" font-family="Arial, sans-serif" font-size="14" font-weight="700">3</text>
+<text x="44" y="371.0" fill="#172b2a" font-family="Arial, sans-serif" font-size="15">Allowed</text>
+<rect x="350" y="356.0" width="530" height="20" rx="10" fill="#f0efe8"/>
+<rect x="350" y="356.0" width="265.0" height="20" rx="10" fill="#173d37"/>
+<text x="627.0" y="371.0" fill="#172b2a" font-family="Arial, sans-serif" font-size="14" font-weight="700">5</text>
+<text x="44" y="448" fill="#78847f" font-family="Arial, sans-serif" font-size="12">CHECK marks an outcome to complete in the dataset.</text>
+</svg>

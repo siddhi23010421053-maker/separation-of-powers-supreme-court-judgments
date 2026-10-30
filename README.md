@@ -29,4 +29,4 @@ This is a hand-picked summary list, not a comprehensive search of all Supreme Co
 
 ## View
 
-Open `index.html` in a browser. The page uses inline CSS and JavaScript and does not require external services.
+Visit the [project website](https://siddhi23010421053-maker.github.io/separation-of-powers-supreme-court-judgments/). The page uses inline CSS and JavaScript and does not require external services.

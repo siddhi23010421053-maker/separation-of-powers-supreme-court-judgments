@@ -6,11 +6,11 @@ This simplified project summarizes issue and ruling notes for 19 Supreme Court o
 
 Team Siddhi Shukla
 
-- Siddhi Shukla — PNR 23010431053
-- Ananya Jayanti Singh — PNR 23010421005
-- Kashvi Gupta — PNR 23010421023
-- Jyotsana Singh — PNR 23010421022
-- Prarthana Garg — PNR 23010421036
+- Siddhi Shukla — PRN 23010421053
+- Ananya Jayanti Singh — PRN 23010421005
+- Kashvi Gupta — PRN 23010421023
+- Jyotsana Singh — PRN 23010421022
+- Prarthana Garg — PRN 23010421036
 
 ## Contents
 

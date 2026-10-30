@@ -17,8 +17,8 @@ Team Siddhi Shukla
 - `index.html` — responsive, searchable issue/ruling table
 - `data.xlsx` — the course dataset template, completed with the available case summaries
 - `data.csv` — CSV export of the Data sheet
-- `chart1-per-year.svg`, `chart2-outcome.svg`, `chart3-who-won.svg` — visual summaries of the dataset
-- `scripts/make_charts.py` — regenerates the charts with `python scripts/make_charts.py`
+- `chart1-per-year.svg`, `chart2-outcome.svg`, `chart3-who-won.svg` — responsive vector summaries of the dataset
+- `scripts/make_charts.py` — regenerates the SVG charts from data.csv with `python scripts/make_charts.py`
 - `separation-of-powers-report.pdf` — a formatted report with the project overview and 19 case summaries
 
 ## Scope

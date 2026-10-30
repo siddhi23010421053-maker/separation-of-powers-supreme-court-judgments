@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="A concise student research overview of 19 Supreme Court of India cases on separation of powers, judicial review, and institutional boundaries.">
+  <title>Separation of Powers — Supreme Court of India</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f4f1e9;
+      --surface: #fffefa;
+      --ink: #172b2a;
+      --muted: #64716d;
+      --line: #dedfd5;
+      --forest: #173d37;
+      --forest-deep: #102e2a;
+      --gold: #c69b58;
+      --gold-pale: #eee3ce;
+      --shadow: 0 18px 55px rgb(23 43 42 / 8%);
+      --serif: Georgia, "Times New Roman", serif;
+      --sans: "Segoe UI", Inter, system-ui, -apple-system, sans-serif;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        color-scheme: dark;
+        --paper: #111b19;
+        --surface: #182522;
+        --ink: #e8eee8;
+        --muted: #aab8af;
+        --line: #34443e;
+        --forest: #bdd2c4;
+        --forest-deep: #0c1715;
+        --gold: #d6b374;
+        --gold-pale: #3a3427;
+        --shadow: 0 18px 55px rgb(0 0 0 / 20%);
+      }
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font: 16px/1.65 var(--sans);
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; }
+    a:focus-visible, input:focus-visible, button:focus-visible {
+      outline: 3px solid var(--gold);
+      outline-offset: 3px;
+    }
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      max-width: 1320px;
+      margin: auto;
+      padding: 1.15rem clamp(1.2rem, 5vw, 4.8rem);
+    }
+    .wordmark {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+      color: var(--forest);
+      font-size: .73rem;
+      font-weight: 800;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+    .seal {
+      display: grid;
+      width: 2.25rem;
+      height: 2.25rem;
+      place-items: center;
+      border: 1px solid var(--gold);
+      border-radius: 50%;
+      color: var(--gold);
+      font: 1.1rem var(--serif);
+    }
+    .top-link {
+      color: var(--muted);
+      font-size: .82rem;
+      font-weight: 650;
+      text-decoration: none;
+    }
+    .top-link:hover { color: var(--forest); }
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(ellipse at 82% 18%, rgb(198 155 88 / 16%), transparent 32%),
+        linear-gradient(118deg, var(--forest-deep), #1b4941 75%, #24544a);
+      color: #f8f6ef;
+    }
+    .hero::after {
+      position: absolute;
+      right: -4rem;
+      bottom: -17rem;
+      width: 38rem;
+      height: 38rem;
+      border: 1px solid rgb(238 227 206 / 12%);
+      border-radius: 50%;
+      box-shadow: 0 0 0 2.5rem rgb(238 227 206 / 3%), 0 0 0 5rem rgb(238 227 206 / 3%);
+      content: "";
+      pointer-events: none;
+    }
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(210px, 270px);
+      align-items: end;
+      gap: 3rem;
+      max-width: 1320px;
+      min-height: 365px;
+      margin: auto;
+      padding: 4.6rem clamp(1.2rem, 5vw, 4.8rem) 4rem;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: .65rem;
+      margin: 0 0 1.35rem;
+      color: #e5c994;
+      font-size: .72rem;
+      font-weight: 750;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+    .eyebrow::before { width: 2rem; height: 1px; background: var(--gold); content: ""; }
+    h1 {
+      max-width: 820px;
+      margin: 0;
+      font: 500 clamp(3rem, 7vw, 6.5rem)/.98 var(--serif);
+      letter-spacing: -.055em;
+    }
+    .hero-subtitle {
+      max-width: 620px;
+      margin: 1.35rem 0 0;
+      color: rgb(248 246 239 / 77%);
+      font-size: clamp(.98rem, 1.5vw, 1.12rem);
+    }
+    .hero-meta {
+      padding: 1.1rem 0 0 1.4rem;
+      border-left: 1px solid rgb(238 227 206 / 35%);
+      color: rgb(248 246 239 / 70%);
+      font-size: .84rem;
+    }
+    .hero-meta strong {
+      display: block;
+      margin-bottom: .35rem;
+      color: #f8f6ef;
+      font-family: var(--serif);
+      font-size: 1.35rem;
+      font-weight: 500;
+    }
+    .hero-meta a { display: inline-block; margin-top: .8rem; color: #e5c994; text-underline-offset: 4px; }
+    main { max-width: 1320px; margin: auto; padding: 0 clamp(1.2rem, 5vw, 4.8rem) 4rem; }
+    .overview {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(210px, 310px);
+      gap: clamp(2rem, 6vw, 6rem);
+      align-items: center;
+      padding: 3.5rem 0 2.7rem;
+      border-bottom: 1px solid var(--line);
+    }
+    .section-kicker {
+      margin: 0 0 .6rem;
+      color: #987445;
+      font-size: .7rem;
+      font-weight: 800;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+    h2 {
+      margin: 0;
+      color: var(--forest);
+      font: 500 clamp(1.9rem, 3.2vw, 2.8rem)/1.12 var(--serif);
+      letter-spacing: -.025em;
+    }
+    .overview-copy { max-width: 690px; margin: .9rem 0 0; color: var(--muted); }
+    .stat {
+      padding: 1.2rem 1.5rem;
+      border-left: 2px solid var(--gold);
+    }
+    .stat-number { display: block; color: var(--forest); font: 500 3.8rem/.95 var(--serif); letter-spacing: -.05em; }
+    .stat-label { display: block; margin-top: .55rem; color: var(--muted); font-size: .82rem; }
+    .scope {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 1rem;
+      margin: 2rem 0 3rem;
+      padding: 1.2rem 1.35rem;
+      border: 1px solid #dfcfad;
+      border-radius: 3px;
+      background: color-mix(in srgb, var(--gold-pale) 52%, var(--surface));
+      color: var(--muted);
+      font-size: .9rem;
+    }
+    .scope-mark {
+      display: grid;
+      width: 1.8rem;
+      height: 1.8rem;
+      place-items: center;
+      border: 1px solid var(--gold);
+      border-radius: 50%;
+      color: #987445;
+      font: 700 .9rem var(--serif);
+    }
+    .scope strong { color: var(--ink); }
+    .cases-heading {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 1.2rem;
+    }
+    .cases-heading p { max-width: 470px; margin: .5rem 0 0; color: var(--muted); font-size: .9rem; }
+    .controls { margin: 1.35rem 0 1rem; }
+    .search-label {
+      display: block;
+      margin-bottom: .5rem;
+      color: var(--muted);
+      font-size: .72rem;
+      font-weight: 750;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+    .search-wrap { position: relative; max-width: 520px; }
+    .search-wrap::before {
+      position: absolute;
+      top: 50%;
+      left: 1rem;
+      width: .72rem;
+      height: .72rem;
+      border: 1.5px solid var(--muted);
+      border-radius: 50%;
+      content: "";
+      transform: translateY(-60%);
+    }
+    .search-wrap::after {
+      position: absolute;
+      top: calc(50% + .35rem);
+      left: 1.72rem;
+      width: .34rem;
+      height: 1px;
+      background: var(--muted);
+      content: "";
+      transform: rotate(45deg);
+      transform-origin: left center;
+    }
+    input {
+      width: 100%;
+      min-height: 3.25rem;
+      padding: .8rem 1rem .8rem 2.8rem;
+      border: 1px solid var(--line);
+      border-radius: 3px;
+      background: var(--surface);
+      color: var(--ink);
+      font: inherit;
+      transition: border-color .2s, box-shadow .2s;
+    }
+    input:focus { border-color: var(--gold); box-shadow: 0 0 0 3px rgb(198 155 88 / 15%); outline: 0; }
+    .result-count { min-height: 1.4rem; margin: 0 0 .65rem; color: var(--muted); font-size: .8rem; }
+    .table-wrap {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+    table { width: 100%; border-collapse: collapse; }
+    th {
+      padding: .8rem 1.15rem;
+      background: var(--forest);
+      color: #f8f6ef;
+      font-size: .67rem;
+      font-weight: 750;
+      letter-spacing: .12em;
+      text-align: left;
+      text-transform: uppercase;
+    }
+    td {
+      padding: 1.35rem 1.15rem;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+    tbody tr:last-child td { border-bottom: 0; }
+    tbody tr { transition: background .18s ease; }
+    tbody tr:hover { background: color-mix(in srgb, var(--gold-pale) 30%, var(--surface)); }
+    td:first-child { width: 4.4rem; color: #a17d47; font: 500 1.35rem var(--serif); }
+    td:nth-child(2) { width: 25%; color: var(--forest); font: 600 1.08rem/1.35 var(--serif); }
+    td:nth-child(3), td:nth-child(4) { width: 35%; color: var(--muted); font-size: .9rem; }
+    td:nth-child(4) { color: var(--ink); }
+    footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-top: 3rem;
+      padding: 1.3rem 0 0;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: .82rem;
+    }
+    footer p { margin: 0; }
+    footer a { color: var(--forest); text-decoration-color: var(--gold); text-underline-offset: 3px; }
+    [hidden] { display: none !important; }
+    @media (max-width: 760px) {
+      .hero-inner { grid-template-columns: 1fr; gap: 2rem; min-height: 0; padding-top: 3.5rem; padding-bottom: 3rem; }
+      .hero-meta { max-width: 340px; }
+      .overview { grid-template-columns: 1fr auto; gap: 1rem; padding-top: 2.8rem; }
+      .stat { padding-right: 0; }
+      .stat-number { font-size: 3rem; }
+      .cases-heading { display: block; }
+      .table-wrap { overflow: visible; border: 0; background: transparent; box-shadow: none; }
+      table, tbody { display: block; width: 100%; }
+      thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; clip-path: inset(50%); }
+      tbody { display: grid; gap: .8rem; }
+      tbody tr {
+        display: grid;
+        grid-template-columns: 2rem minmax(0, 1fr);
+        gap: 0 .7rem;
+        padding: .9rem 1rem;
+        border: 1px solid var(--line);
+        border-radius: 4px;
+        background: var(--surface);
+      }
+      tbody tr:hover { background: var(--surface); }
+      td { display: block; width: auto !important; padding: .55rem 0; border: 0; }
+      td:first-child { grid-row: 1 / span 3; padding-top: .65rem; }
+      td:nth-child(2) { padding-top: .45rem; font-size: 1.16rem; }
+      td:nth-child(3), td:nth-child(4) { grid-column: 2; font-size: .87rem; }
+      td:nth-child(3)::before, td:nth-child(4)::before {
+        display: block;
+        margin-bottom: .22rem;
+        color: #987445;
+        font: 750 .63rem var(--sans);
+        letter-spacing: .12em;
+        text-transform: uppercase;
+      }
+      td:nth-child(3)::before { content: "Issue"; }
+      td:nth-child(4)::before { content: "Ruling"; }
+      footer { flex-direction: column; }
+    }
+    @media (max-width: 420px) {
+      .topbar { align-items: flex-start; }
+      .top-link { max-width: 110px; text-align: right; }
+      .hero-inner { padding-top: 2.8rem; }
+      h1 { font-size: clamp(2.65rem, 15vw, 3.6rem); }
+      .overview { grid-template-columns: 1fr; }
+      .stat { display: flex; align-items: baseline; gap: .7rem; border-left: 0; border-top: 1px solid var(--line); padding: 1rem 0 0; }
+      .stat-number { font-size: 2.5rem; }
+      .scope { gap: .7rem; padding: 1rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="topbar" aria-label="Project navigation">
+    <div class="wordmark"><span class="seal" aria-hidden="true">§</span><span>Judgment<br>research</span></div>
+    <a class="top-link" href="https://github.com/siddhi23010421053-maker/separation-of-powers-supreme-court-judgments">View project repository ↗</a>
+  </nav>
+  <header class="hero">
+    <div class="hero-inner">
+      <div>
+        <p class="eyebrow">Supreme Court of India · 2021—2026</p>
+        <h1>Who decides<br>what?</h1>
+        <p class="hero-subtitle">A study of separation of powers, judicial restraint, and the boundaries between India’s constitutional institutions.</p>
+      </div>
+      <div class="hero-meta">
+        <strong>Team Siddhi Shukla</strong>
+        Five-member student research team<br>
+        Coverage window: 1 Sep 2021 — 31 Aug 2026
+        <a href="#case-list">Explore the case summaries ↓</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="intro" aria-labelledby="about">
+      <div class="overview">
+        <div>
+          <p class="section-kicker">The project</p>
+          <h2 id="about">Institutions in balance.<br>Power under review.</h2>
+          <p class="overview-copy">This concise collection brings together 19 case summaries on how the Court approaches institutional limits, legislative choices, executive authority, and judicial review. It is a focused student project—not a complete census of every decision on the subject.</p>
+        </div>
+        <div class="stat" aria-label="19 case summaries">
+          <span class="stat-number">19</span>
+          <span class="stat-label">case summaries<br>in this collection</span>
+        </div>
+      </div>
+    </section>
+    <aside class="scope" aria-label="Project scope">
+      <span class="scope-mark" aria-hidden="true">i</span>
+      <div><strong>Project scope</strong><br>A curated set of Supreme Court cases exploring how institutional boundaries, legislative choices, executive authority, and judicial review interact.</div>
+    </aside>
+    <section id="case-list" aria-labelledby="case-heading">
+      <div class="cases-heading">
+        <div>
+          <p class="section-kicker">Browse the collection</p>
+          <h2 id="case-heading">The cases</h2>
+          <p>Explore the question before the Court and the outcome described in the team’s notes.</p>
+        </div>
+      </div>
+      <div class="controls">
+        <label class="search-label" for="filter">Search the collection</label>
+        <div class="search-wrap"><input id="filter" type="search" placeholder="Try a case name, institution, or topic…" autocomplete="off"></div>
+      </div>
+      <p id="result-count" class="result-count" aria-live="polite">Showing 19 of 19 cases</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th scope="col">No.</th><th scope="col">Case</th><th scope="col">Issue before the Court</th><th scope="col">Ruling summary</th></tr>
+          </thead>
+          <tbody id="cases">
+          <tr><td>1</td><td>Madras Bar Association v. Union of India</td><td>Whether the Tribunals Reforms Act, 2021 could re-enact provisions previously invalidated by the Court.</td><td>The Court invalidated key restrictions and held that legislation cannot simply override a judgment without curing the constitutional defect.</td></tr>
+          <tr><td>2</td><td>Ashwini Kumar Upadhyay v. Union of India (hate speech)</td><td>Whether courts may create or expand criminal offences through directions where legislation does not do so.</td><td>The Court declined the requested intervention, treating creation of criminal offences and punishments as a legislative function.</td></tr>
+          <tr><td>3</td><td>Supriyo @ Supriya Chakraborty v. Union of India</td><td>Whether the Court could extend marriage recognition under the Special Marriage Act to same-sex couples.</td><td>The Court left creation of a new marriage or civil-union framework to legislative policy.</td></tr>
+          <tr><td>4</td><td>Ashwini Kumar Upadhyay v. Union of India (minimum age of marriage)</td><td>Whether the minimum age of marriage for women should be raised to 21 to match that for men.</td><td>The Court declined to direct Parliament to establish a uniform minimum age.</td></tr>
+          <tr><td>5</td><td>Sanjay Prakash v. Union of India (CAPF, OGAS)</td><td>Whether executive service and promotion policies in the CAPFs complied with constitutional requirements.</td><td>The Court used judicial review to address restrictions affecting service equality and highlighted limits on executive action.</td></tr>
+          <tr><td>6</td><td>Gujarat Urja Vikas Nigam Limited v. Amit Gupta</td><td>How the IBC tribunal's jurisdiction applies to disputes involving contracts and regulatory matters.</td><td>The Court clarifying jurisdictional boundaries among tribunals, contracts, and courts.</td></tr>
+          <tr><td>7</td><td>In Re: Special Reference No. 1 of 2025 (Governors, Articles 200 and 201)</td><td>What limits govern a Governor's options when considering State bills.</td><td>The Court described limits on gubernatorial inaction and addressed the relationship between executive and legislative roles.</td></tr>
+          <tr><td>8</td><td>Anoop Baranwal v. Union of India</td><td>How the Chief Election Commissioner and Election Commissioners should be appointed in the absence of legislation.</td><td>The Court prescribed an interim appointment committee arrangement until Parliament enacted a law.</td></tr>
+          <tr><td>9</td><td>Animal Welfare Board of India v. Union of India (Jallikattu)</td><td>Whether State amendments permitting Jallikattu were valid after the Court's earlier decision.</td><td>The Court upheld the amendments, treating them as changing the legal framework considered earlier.</td></tr>
+          <tr><td>10</td><td>Government of NCT of Delhi v. Union of India (Services)</td><td>Which government controls services in the National Capital Territory of Delhi.</td><td>The Court recognized a significant role for Delhi's elected government in administration and discussed federal boundaries.</td></tr>
+          <tr><td>11</td><td>Association for Democratic Reforms v. Union of India (Electoral Bonds)</td><td>Whether the Electoral Bond Scheme and related amendments were constitutionally valid.</td><td>The Court invalidated the scheme on rights grounds, while recognizing that legislation remains subject to judicial review.</td></tr>
+          <tr><td>12</td><td>Cox &amp; Kings Ltd. v. SAP India Pvt. Ltd.</td><td>How the group-of-companies doctrine applies under Indian arbitration law.</td><td>The Court addressed interpretation of corporate relationships while applying the governing statutory framework.</td></tr>
+          <tr><td>13</td><td>Subhash Desai v. Principal Secretary, Governor of Maharashtra</td><td>Whether the Governor could call for a trust vote based on internal party disputes and how the Speaker's role applied.</td><td>The Court found the floor-test decision unlawful but declined to restore the former Chief Minister after his resignation.</td></tr>
+          <tr><td>14</td><td>Neil Aurelio Nunes v. Union of India (NEET OBC/EWS)</td><td>Whether the reservation policy for OBC and EWS candidates in NEET was subject to judicial intervention.</td><td>The Court upheld the policy and described limits on judicial review of policy choices.</td></tr>
+          <tr><td>15</td><td>Pankaj Bansal v. Union of India</td><td>What safeguards apply to arrest powers exercised by enforcement authorities under the PMLA.</td><td>The Court required written communication of the grounds of arrest as a check on executive power.</td></tr>
+          <tr><td>16</td><td>Central Electricity Regulatory Commission v. NTPC</td><td>How far courts may intervene in tariff decisions made by expert regulatory bodies.</td><td>The Court emphasized deference to technical expertise and cautioned against courts setting tariffs.</td></tr>
+          <tr><td>17</td><td>S. G. Vombatkere v. Union of India (Sedition)</td><td>How Section 124A of the Indian Penal Code should be treated while its constitutionality was challenged.</td><td>The Court stayed enforcement temporarily and asked the Union to reconsider the provision.</td></tr>
+          <tr><td>18</td><td>State of Punjab v. Principal Secretary to Governor</td><td>Whether the Governor could question the validity of an Assembly session when considering bills passed by it.</td><td>The Court held that the Governor could not question the session's validity and stressed the functioning of the elected legislature.</td></tr>
+          <tr><td>19</td><td>In Re: Section 6A of the Citizenship Act</td><td>Whether Parliament had competence to enact Section 6A and whether the provision was constitutional.</td><td>The Court upheld Section 6A and recognized Parliament's latitude in citizenship matters.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <footer>
+      <p>State of Jharkhand v. Harihar Mishra is excluded as directed in the project instructions.</p>
+      <p>Download: <a href="separation-of-powers-report.pdf">Report PDF</a> · <a href="cases.csv">CSV</a> · <a href="case-summary.xlsx">Workbook</a></p>
+    </footer>
+  </main>
+  <script>
+    const filter = document.querySelector("#filter");
+    const rows = [...document.querySelectorAll("#cases tr")];
+    const resultCount = document.querySelector("#result-count");
+    filter.addEventListener("input", () => {
+      const query = filter.value.trim().toLocaleLowerCase();
+      let visible = 0;
+      for (const row of rows) {
+        const matches = row.textContent.toLocaleLowerCase().includes(query);
+        row.hidden = !matches;
+        if (matches) visible += 1;
+      }
+      resultCount.textContent = `Showing ${visible} of ${rows.length} cases`;
+    });
+  </script>
+</body>
+</html>

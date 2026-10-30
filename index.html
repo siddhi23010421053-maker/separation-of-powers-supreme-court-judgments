@@ -211,6 +211,19 @@
       font: 700 .9rem var(--serif);
     }
     .scope strong { color: var(--ink); }
+    .charts { margin: 3rem 0 3.5rem; }
+    .chart-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 1.2rem; }
+    .chart-card {
+      margin: 0;
+      padding: 1rem;
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+    .chart-card:first-child { grid-column: 1 / -1; }
+    .chart-card img { display: block; width: 100%; height: auto; }
+    .chart-card figcaption { padding: .55rem .25rem .1rem; color: var(--muted); font-size: .82rem; }
     .cases-heading {
       display: flex;
       align-items: end;
@@ -315,6 +328,8 @@
       .overview { grid-template-columns: 1fr auto; gap: 1rem; padding-top: 2.8rem; }
       .stat { padding-right: 0; }
       .stat-number { font-size: 3rem; }
+      .chart-grid { grid-template-columns: 1fr; }
+      .chart-card:first-child { grid-column: auto; }
       .cases-heading { display: block; }
       .table-wrap { overflow: visible; border: 0; background: transparent; box-shadow: none; }
       table, tbody { display: block; width: 100%; }
@@ -399,6 +414,24 @@
       <span class="scope-mark" aria-hidden="true">i</span>
       <div><strong>Project scope</strong><br>A curated set of Supreme Court cases exploring how institutional boundaries, legislative choices, executive authority, and judicial review interact.</div>
     </aside>
+    <section class="charts" aria-labelledby="charts-heading">
+      <p class="section-kicker">At a glance</p>
+      <h2 id="charts-heading">The collection in charts</h2>
+      <div class="chart-grid">
+        <figure class="chart-card">
+          <img src="chart1-per-year.png" alt="Bar chart showing the number of case summaries in each year from 2021 through 2026">
+          <figcaption>Case summaries by year. The 2021 and 2026 labels reflect partial years in the study window.</figcaption>
+        </figure>
+        <figure class="chart-card">
+          <img src="chart2-outcome.png" alt="Bar chart showing recorded outcome categories and fields marked CHECK">
+          <figcaption>Recorded outcomes. CHECK indicates a field still to complete in the dataset.</figcaption>
+        </figure>
+        <figure class="chart-card">
+          <img src="chart3-who-won.png" alt="Bar chart showing recorded prevailing-party categories and fields marked CHECK">
+          <figcaption>Recorded prevailing parties. CHECK indicates a field still to complete in the dataset.</figcaption>
+        </figure>
+      </div>
+    </section>
     <section id="case-list" aria-labelledby="case-heading">
       <div class="cases-heading">
         <div>
@@ -443,7 +476,7 @@
     </section>
     <footer>
       <p>State of Jharkhand v. Harihar Mishra is excluded as directed in the project instructions.</p>
-      <p>Download: <a href="separation-of-powers-report.pdf">Report PDF</a> · <a href="cases.csv">CSV</a> · <a href="case-summary.xlsx">Workbook</a></p>
+      <p>Download: <a href="separation-of-powers-report.pdf">Report PDF</a> · <a href="data.csv">Dataset CSV</a> · <a href="data.xlsx">Dataset workbook</a></p>
     </footer>
   </main>
   <script>

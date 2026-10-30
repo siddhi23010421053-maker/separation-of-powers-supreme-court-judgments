@@ -49,11 +49,11 @@ def make_chart(title, labels_and_values, path, note, highlight_check=False):
         f'<desc id="chart-description">{description}</desc>',
         f'<rect width="960" height="{height}" rx="8" fill="{COLORS["background"]}"/>',
         f'<text x="44" y="46" fill="{COLORS["muted"]}" font-family="Arial, sans-serif" '
-        'font-size="12" font-weight="700" letter-spacing="1.5">DATASET SNAPSHOT</text>',
+        'font-size="18" font-weight="700" letter-spacing="1.5">DATASET SNAPSHOT</text>',
         f'<text x="44" y="82" fill="{COLORS["ink"]}" font-family="Arial, sans-serif" '
-        f'font-size="27" font-weight="700">{chart_title}</text>',
+        f'font-size="36" font-weight="700">{chart_title}</text>',
         f'<text x="44" y="108" fill="{COLORS["muted"]}" font-family="Arial, sans-serif" '
-        'font-size="14">Number of cases</text>',
+        'font-size="20">Number of cases</text>',
     ]
 
     if highlight_check:
@@ -61,7 +61,7 @@ def make_chart(title, labels_and_values, path, note, highlight_check=False):
             [
                 f'<rect x="790" y="30" width="12" height="12" rx="3" fill="{COLORS["gold"]}"/>',
                 f'<text x="809" y="41" fill="{COLORS["muted"]}" font-family="Arial, sans-serif" '
-                'font-size="12">CHECK field</text>',
+                'font-size="18">CHECK field</text>',
             ]
         )
 
@@ -73,7 +73,7 @@ def make_chart(title, labels_and_values, path, note, highlight_check=False):
                 f'y2="{chart_bottom - 8}" stroke="{COLORS["grid"]}" stroke-width="1"/>',
                 f'<text x="{x:.1f}" y="{chart_bottom + 20}" text-anchor="middle" '
                 f'fill="{COLORS["muted"]}" font-family="Arial, sans-serif" '
-                f'font-size="12">{tick}</text>',
+                f'font-size="18">{tick}</text>',
             ]
         )
 
@@ -84,7 +84,7 @@ def make_chart(title, labels_and_values, path, note, highlight_check=False):
         parts.extend(
             [
                 f'<text x="44" y="{center_y + 5:.1f}" fill="{COLORS["ink"]}" '
-                'font-family="Arial, sans-serif" font-size="15">'
+                'font-family="Arial, sans-serif" font-size="26">'
                 f'{html.escape(label)}</text>',
                 f'<rect x="{chart_left}" y="{center_y - 10:.1f}" width="{chart_width}" '
                 f'height="20" rx="10" fill="{COLORS["track"]}"/>',
@@ -92,14 +92,14 @@ def make_chart(title, labels_and_values, path, note, highlight_check=False):
                 f'height="20" rx="10" fill="{fill}"/>',
                 f'<text x="{chart_left + bar_width + 12:.1f}" y="{center_y + 5:.1f}" '
                 f'fill="{COLORS["ink"]}" font-family="Arial, sans-serif" '
-                f'font-size="14" font-weight="700">{value}</text>',
+                f'font-size="20" font-weight="700">{value}</text>',
             ]
         )
 
     parts.extend(
         [
             f'<text x="44" y="{height - 20}" fill="{COLORS["muted"]}" '
-            'font-family="Arial, sans-serif" font-size="12">'
+            'font-family="Arial, sans-serif" font-size="18">'
             f'{html.escape(note)}</text>',
             "</svg>",
         ]
